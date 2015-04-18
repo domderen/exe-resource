@@ -7,6 +7,7 @@
   },
   // To give you an idea how to override rule options:
   "rules": {
+    "strict": [0],
     "quotes": [2, "single"],
     "eol-last": [0],
     "no-mixed-requires": [0],

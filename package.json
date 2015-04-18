@@ -5,9 +5,10 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "gulp test",
-    "prepublish": "gulp build"
+    "prepublish": "gulp build",
     "start": "gulp",
-    "coverage": "gulp coverage"
+    "coverage": "gulp coverage",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
@@ -53,7 +54,7 @@
     "sinon-chai": "^2.7.0"
   },
   "babelBoilerplateOptions": {
-    "entryFileName": "index",
+    "entryFileName": "exeResource",
     "exportVarName": "MyLibrary",
     "mochaGlobals": [
       "stub",
