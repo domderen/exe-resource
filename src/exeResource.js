@@ -4,8 +4,6 @@ import path from 'path';
 
 es6Promise.polyfill();
 
-var excapeString = (str) => '\"' + str + '\"';
-
 export default (executablePath, {fileVersion, productVersion, companyName, fileDescription, legalCopyright, productName}) => {
   return new Promise((resolve, reject) => {
     let args = [executablePath];
@@ -19,19 +17,19 @@ export default (executablePath, {fileVersion, productVersion, companyName, fileD
     }
 
     if(companyName !== undefined) {
-      args.push(...['/s', 'company', excapeString(companyName)]);
+      args.push(...['/s', 'company', companyName]);
     }
 
     if(fileDescription !== undefined) {
-      args.push(...['/s', 'desc', excapeString(fileDescription)]);
+      args.push(...['/s', 'desc', fileDescription]);
     }
 
     if(legalCopyright !== undefined) {
-      args.push(...['/s', '(c)', excapeString(legalCopyright)]);
+      args.push(...['/s', '(c)', legalCopyright]);
     }
 
     if(productName !== undefined) {
-      args.push(...['/s', 'product', excapeString(productName)]);
+      args.push(...['/s', 'product', productName]);
     }
 
     if(args.length === 1) {

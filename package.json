@@ -1,6 +1,6 @@
 {
   "name": "exe-resource",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Module allowing to edit resource properties of executable files (.dll, .exe etc) on Windows.",
   "main": "dist/index.js",
   "scripts": {
