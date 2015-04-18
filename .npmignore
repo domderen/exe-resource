@@ -1,0 +1,8 @@
+src
+test
+appveyor.yml
+.npmignore
+.eslintrc
+gulpfile.js
+editorconfig
+coverage
