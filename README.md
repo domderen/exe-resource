@@ -1,5 +1,7 @@
 # Exe Resource
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/domderen/exe-resource.svg)](https://greenkeeper.io/)
+
 Module allowing to modify resource properties of executable files (.dll, .exe, etc) on Windows.
 
 ## Installing
